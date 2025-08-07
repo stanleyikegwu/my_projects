@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>LuxuryStay - Premium Hotel Booking</title>
+              <link rel="stylesheet" href="hotel booking2.css">
+              <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+          </head>
+          <body>
+              <header class="header">
+                  <nav class="navbar">
+                      <div class="nav-container">
+                          <div class="logo">
+                              <h1>LuxuryStay</h1>
+                          </div>
+                          <ul class="nav-menu">
+                              <li><a href="#home">Home</a></li>
+                              <li><a href="#hotels">Hotels</a></li>
+                              <li><a href="#destinations">Destinations</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                          </ul>
+                          <div class="nav-actions">
+                              <button class="btn-secondary">Sign In</button>
+                              <button class="btn-primary">Book Now</button>
+                          </div>
+                      </div>
+                  </nav>
+              </header>
+
+              <!-- Hero Section -->
+              <section class="hero">
+                  <div class="hero-content">
+                      <div class="hero-text">
+                          <h1>Discover Luxury</h1>
+                          <h2>Beyond Imagination</h2>
+                          <p>Experience world-class hospitality in the most breathtaking destinations around the globe</p>
+                      </div>
+                      
+                      <!-- Booking Form -->
+                      <div class="booking-form">
+                          <div class="form-header">
+                              <h3>Find Your Perfect Stay</h3>
+                          </div>
+                          <form class="booking-inputs">
+                              <div class="input-group">
+                                  <label for="destination">Destination</label>
+                                  <select id="destination" name="destination">
+                                      <option value="">Select Destination</option>
+                                      <option value="paris">Paris, France</option>
+                                      <option value="tokyo">Tokyo, Japan</option>
+                                      <option value="newyork">New York, USA</option>
+                                      <option value="london">London, UK</option>
+                                      <option value="dubai">Dubai, UAE</option>
+                                  </select>
+                              </div>
+                              
+                              <div class="input-group">
+                                  <label for="checkin">Check-in</label>
+                                  <input type="date" id="checkin" name="checkin">
+                              </div>
+                              
+                              <div class="input-group">
+                                  <label for="checkout">Check-out</label>
+                                  <input type="date" id="checkout" name="checkout">
+                              </div>
+                              
+                              <div class="input-group">
+                                  <label for="guests">Guests</label>
+                                  <select id="guests" name="guests">
+                                      <option value="1">1 Guest</option>
+                                      <option value="2">2 Guests</option>
+                                      <option value="3">3 Guests</option>
+                                      <option value="4">4 Guests</option>
+                                      <option value="5+">5+ Guests</option>
+                                  </select>
+                              </div>
+                              
+                              <button type="submit" class="search-btn">Search Hotels</button>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="hero-background"></div>
+              </section>
+
+              <!-- Featured Hotels -->
+              <section class="featured-hotels">
+                  <div class="container">
+                      <div class="section-header">
+                          <h2>Featured Luxury Hotels</h2>
+                          <p>Handpicked destinations for the discerning traveler</p>
+                      </div>
+                      
+                      <div class="hotels-grid">
+                          <div class="hotel-card">
+                              <div class="hotel-image">
+                                  <div class="image-placeholder hotel-1"></div>
+                                  <div class="hotel-badge">Popular</div>
+                              </div>
+                              <div class="hotel-info">
+                                  <h3>The Grand Palace</h3>
+                                  <p class="location">Paris, France</p>
+                                  <div class="rating">
+                                      <span class="stars">★★★★★</span>
+                                      <span class="review-count">(247 reviews)</span>
+                                  </div>
+                                  <div class="price">
+                                      <span class="amount">$450</span>
+                                      <span class="period">per night</span>
+                                  </div>
+                                  <button class="book-btn">Book Now</button>
+                              </div>
+                          </div>
+                          
+                          <div class="hotel-card">
+                              <div class="hotel-image">
+                                  <div class="image-placeholder hotel-2"></div>
+                                  <div class="hotel-badge">Luxury</div>
+                              </div>
+                              <div class="hotel-info">
+                                  <h3>Tokyo Imperial Suite</h3>
+                                  <p class="location">Tokyo, Japan</p>
+                                  <div class="rating">
+                                      <span class="stars">★★★★★</span>
+                                      <span class="review-count">(189 reviews)</span>
+                                  </div>
+                                  <div class="price">
+                                      <span class="amount">$580</span>
+                                      <span class="period">per night</span>
+                                  </div>
+                                  <button class="book-btn">Book Now</button>
+                              </div>
+                          </div>
+                          
+                          <div class="hotel-card">
+                              <div class="hotel-image">
+                                  <div class="image-placeholder hotel-3"></div>
+                                  <div class="hotel-badge">Premium</div>
+                              </div>
+                              <div class="hotel-info">
+                                  <h3>Manhattan Heights</h3>
+                                  <p class="location">New York, USA</p>
+                                  <div class="rating">
+                                      <span class="stars">★★★★★</span>
+                                      <span class="review-count">(312 reviews)</span>
+                                  </div>
+                                  <div class="price">
+                                      <span class="amount">$620</span>
+                                      <span class="period">per night</span>
+                                  </div>
+                                  <button class="book-btn">Book Now</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+              <!-- Services Section -->
+              <section class="services">
+                  <div class="container">
+                      <div class="section-header">
+                          <h2>Why Choose LuxuryStay</h2>
+                          <p>Experience unparalleled service and amenities</p>
+                      </div>
+                      
+                      <div class="services-grid">
+                          <div class="service-item">
+                              <div class="service-icon">🏨</div>
+                              <h3>Luxury Accommodations</h3>
+                              <p>Handpicked premium hotels with exceptional standards</p>
+                          </div>
+                          
+                          <div class="service-item">
+                              <div class="service-icon">🔒</div>
+                              <h3>Secure Booking</h3>
+                              <p>Safe and secure payment processing with instant confirmation</p>
+                          </div>
+                          
+                          <div class="service-item">
+                              <div class="service-icon">📞</div>
+                              <h3>24/7 Support</h3>
+                              <p>Round-the-clock customer service for your peace of mind</p>
+                          </div>
+                          
+                          <div class="service-item">
+                              <div class="service-icon">💎</div>
+                              <h3>VIP Treatment</h3>
+                              <p>Exclusive perks and upgrades for our valued guests</p>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+
+              <!-- Footer -->
+              <footer class="footer">
+                  <div class="container">
+                      <div class="footer-content">
+                          <div class="footer-section">
+                              <h3>LuxuryStay</h3>
+                              <p>Your gateway to extraordinary travel experiences around the world.</p>
+                          </div>
+                          
+                          <div class="footer-section">
+                              <h4>Quick Links</h4>
+                              <ul>
+                                  <li><a href="#about">About Us</a></li>
+                                  <li><a href="#hotels">Hotels</a></li>
+                                  <li><a href="#destinations">Destinations</a></li>
+                                  <li><a href="#contact">Contact</a></li>
+                              </ul>
+                          </div>
+                          
+                          <div class="footer-section">
+                              <h4>Support</h4>
+                              <ul>
+                                  <li><a href="#help">Help Center</a></li>
+                                  <li><a href="#booking">Booking Help</a></li>
+                                  <li><a href="#cancellation">Cancellation</a></li>
+                                  <li><a href="#terms">Terms & Conditions</a></li>
+                              </ul>
+                          </div>
+                          
+                          <div class="footer-section">
+                              <h4>Contact Info</h4>
+                              <p>📧 info@luxurystay.com</p>
+                              <p>📞 +1 (555) 123-4567</p>
+                              <p>📍 123 Luxury Avenue, Suite 100</p>
+                          </div>
+                      </div>
+                      
+                      <div class="footer-bottom">
+                          <p>&copy; 2024 LuxuryStay. All rights reserved.</p>
+                      </div>
+                  </div>
+              </footer>
+          </body>
+          </html>
+    </div>
+
+

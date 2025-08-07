@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+}
+.site-header, footer {
+  background-color: #1f1f1f;
+  padding: 1rem 0;
+  text-align: center;
+}
+.site-header h1, footer p {
+  color: #f1c40f;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #f1c40f;
+}
+.btn {
+  display: inline-block;
+  background-color: #f1c40f;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #e1b400;
+}
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1200x500') center/cover;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.section-title {
+  font-size: 2rem;
+  color: #f1c40f;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.hotel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.hotel-card {
+  background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1), 0 6px 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.hotel-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.1), transparent);
+  pointer-events: none;
+}
+
+.hotel-card:hover {
+   transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15), 0 12px 30px rgba(0, 0, 0, 0.8);
+}
+.hotel-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.hotel-card h3,
+.hotel-card .location,
+.hotel-card .price,
+.stars {
+  padding: 0.5rem 1rem;
+}
+.stars {
+  color: #f1c40f;
+}
